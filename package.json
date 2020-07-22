@@ -1,0 +1,20 @@
+{
+  "name": "flamin-hot-chinos",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koyeary/flamin-hot-chinos.git"
+  },
+  "author": "Kat Yeary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koyeary/flamin-hot-chinos/issues"
+  },
+  "homepage": "https://github.com/koyeary/flamin-hot-chinos#readme"
+}
