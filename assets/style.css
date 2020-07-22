@@ -53,16 +53,16 @@ body {
   }
   
   .neon {
-    font-family: 'Megrim', cursive;
+    font-family: 'Varela Round', sans-serif;
     font-size: 10vw;
-    color: #FFD5FF;
+    color: #FFFFFF;
     white-space: nowrap;
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: .0001em;
-    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+    text-shadow: 1px 0px 4px #FFFFFF, 2px 0px 4px #FFFFFF, 3px 0px 4px #FE00B6, 2px 0px 3px #FE00B6, 2px 3px 15px #FE00B6, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #FE00B6,40px 0vw 200px #FE00B6;
   }
   
   .flicker-slow{
