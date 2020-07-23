@@ -4,7 +4,7 @@ html {
 
 body {
     margin:0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
 .shell {
@@ -87,4 +87,24 @@ body {
   .main-body {
       padding-top: 5%;
       padding-bottom: 10%;
+      font-family: 'Varela Round', sans-serif;
+  }
+
+  .navbars {
+      background-color: #212121;
+      opacity: 0.75;
+  }
+
+  /* typography */
+  .title {
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  /* fade effects */
+
+  .fade {
+    margin: 50px;
+    padding: 50px;
+    background-color: lightgreen;
+    opacity: 1;
   }

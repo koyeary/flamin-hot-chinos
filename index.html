@@ -3,8 +3,10 @@
 
 <head>
     <!--Import Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-        <!--Font Awesome Icons-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <!-- Materialize CSS -->
@@ -33,10 +35,9 @@
         <!-- Main body -->
         <main class="shell-body">
             <nav>
-                <div class="nav-wrapper" style="padding-left:5%;">
-                    <a href="#!" class="brand-logo">Portfolio</a>
-                    <a href="#sidenav" data-target="mobile-demo" class="sidenav-trigger"><i
-                            class="fas fa-hamburger"></i></a>
+                <div class="nav-wrapper teal darken-1 z-depth-3" style="padding-right:5%;">
+                    <!--   <a href="#!" class="brand-logo"></a> -->
+                    <a href="#sidenav" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#aboutme">About Me</a></li>
                         <li><a href="#cv">CV</a></li>
@@ -52,73 +53,113 @@
                 <li><a href="#contactme">Contact Me</a></li>
                 <li><a href="https://github.com/koyeary">GitHub</a></li>
             </ul>
-            <div class="container">
+            <div class="container flow-text">
+                <div class="row main-body center hide-on-small-only title">
+                    <!-- Title on Full-Size Browser -->
+                    <h2 class="light-blue-text text-darken-2">Full-Stack Engineer</h2>
+                </div>
+                <!-- Title on Mobile -->
+                <div class="row main-body center show-on-small title">
+                    <h3 class="light-blue-text text-darken-2">Full-Stack Engineer</h3>
+                </div>
                 <div class="row main-body">
                     <section>
                         <!-- About Me -->
+
                         <div class="row main-body" id="aboutme">
-                            <div class="col s5">
-                                <a href="https://placeholder.com"><img class="responsive-img circle"
-                                        src="https://via.placeholder.com/700"></a>
+                            <div class="col s12 m5">
+
+                                <a href="https://placeholder.com"><img class="responsive-img circle" id="img-fade"
+                                        src="https://via.placeholder.com/800" style="padding-bottom:5%;"></a>
+
                             </div>
-                            <div class="col s1"></div>
-                            <div class="col s6">
-                                <h2>Body</h2>
-                                <p>This design uses CSS grid to create an overlapping header.</p>
+                            <div class="col s1 hide-on-small-only"></div>
+                            <div class="col s12 m6">
+                                <h4 class="light-blue-text text-darken-2">Nice to meet you.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque aliquid, optio,
+                                    tempora voluptatem accusamus magni omnis natus dolores tempore veritatis quae
+                                    voluptatum in aut maiores enim iusto eum alias!</p>
                             </div>
                         </div>
+
                     </section>
                     <!-- Skills & Resume -->
                     <section>
                         <div class="row main-body" id="cv">
-                            <div class="col s6">
-                                <h2>Body</h2>
-                                <p>This design uses CSS grid to create an overlapping header.</p>
+                            <div class="col s12 m6">
+                                <h4 class="light-blue-text text-darken-2">Experience</h4>
+                                <p>I'm a junior software engineer and an experienced project manager. You can check out
+                                    my CV below.</p>
+                                <p></p>
+                                <p><a class="waves-effect waves-light btn-large">CV</a></p>
+                                <p>
+                                    <!-- Modal Trigger -->
+                                    <button data-target="modal1"
+                                        class="btn-large modal-trigger waves-effect waves-light">Expertise</button>
+                                </p>
                             </div>
-                            <div class="col s1"></div>
-                            <div class="col s5">
+                            
+                            <div class="col m1 hide-on-small-only"></div>
+                            <div class="col m5 hide-on-small-only">
                                 <a href="https://placeholder.com"><img class="responsive-img circle"
-                                        src="https://via.placeholder.com/500"></a>
+                                        src="https://via.placeholder.com/800"></a>
                             </div>
                         </div>
                     </section>
                     <!-- Something Else -->
                     <section>
                         <div class="row main-body" id="contactme">
-                            <div class="col s5">
+                            <div class="col m5 hide-on-small-only">
                                 <a href="https://placeholder.com"><img class="responsive-img circle"
-                                        src="https://via.placeholder.com/300"></a>
+                                        src="https://via.placeholder.com/800"></a>
                             </div>
-                            <div class="col s1"></div>
-                            <div class="col s6">
-                                <h2>Body</h2>
-                                <p>This design uses CSS grid to create an overlapping header.</p>
+                            <div class="col s1 hide-on-small-only"></div>
+                            <div class="col s12 m6">
+                                <h4 class="light-blue-text text-darken-2">Contact me.</h4>
+                                <p>Just use this handy form.</p>
+                                <p></p>
+                                <p><a class="waves-effect waves-light btn-large">Say Hello</a></p>
                             </div>
                         </div>
                     </section>
                 </div>
+            </div>
         </main>
         <div class="shell-footer">
-            <footer class="page-footer">
+            <footer class="page-footer teal darken-1 z-depth-3">
                 <div class="container" style="padding:2%;">
                     <div class="row">
-                                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Credits</a></div>
-                                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Sitemap</a></div>
-                                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Twitter</a></div>
-                                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Instagram</a></div>
-                            
-                        </div>
+                        <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Credits</a></div>
+                        <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Sitemap</a></div>
+                        <div class="col s3"><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></div>
+                        <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Twitter</a></div>
+
                     </div>
-                
+                </div>
+
                 <div class="footer-copyright">
                     <div class="container">
                         © 2020 Kat Yeary
-                        <a class="grey-text text-lighten-4 right" href="https://www.katyeary.com">Comedian</a>
+                        <a class="grey-text text-lighten-4 right" href="#https://www.katyeary.com">(I was looking for
+                            the comedian?)</a>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
     <!-- Compiled and minified JavaScript for Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Local Javascript-->
