@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/koyeary/flamin-hot-chinos/issues"
   },
-  "homepage": "https://github.com/koyeary/flamin-hot-chinos#readme"
+  "homepage": "https://github.com/koyeary/flamin-hot-chinos#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "sequelize": "^6.3.3",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "portfolio"
+  ]
 }

@@ -1,20 +1,17 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.modal').modal();
+    $('.tooltipped').tooltip();
 
-/*     $(window).scroll(function() {
-      $('.hideme').each(function(i){
-
-        const objBottom = $(this).position().top + $(this).outerHeight();
-        const windowBottom = $(window).scrollTop() + $(window).height();
-
-        if (windowBottom > objBottom) {
-          $this.animate({'opacity':'1'}, 500);
-        }
-        
-      });
-    }); */
+    const checkpoint = 1000;
+ 
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= checkpoint) {
+        opacity = 0 + currentScroll / checkpoint;
+      }  
+      document.querySelector("shell-body").style.opacity = opacity;
+    });
   });
 
-  const checkpoint = 300;
 

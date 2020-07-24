@@ -5,6 +5,7 @@ html {
 body {
     margin:0;
     font-family: 'Raleway', sans-serif;
+    background-color: #000;
   }
 
 .shell {
@@ -95,6 +96,12 @@ body {
       opacity: 0.75;
   }
 
+  .custom-container {
+    max-width: 70vw;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   /* typography */
   .title {
       font-family: 'Open Sans', sans-serif;
@@ -102,9 +109,3 @@ body {
 
   /* fade effects */
 
-  .fade {
-    margin: 50px;
-    padding: 50px;
-    background-color: lightgreen;
-    opacity: 1;
-  }
