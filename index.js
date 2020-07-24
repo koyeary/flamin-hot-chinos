@@ -12,6 +12,14 @@ $(document).ready(function(){
       }  
       document.querySelector("shell-body").style.opacity = opacity;
     });
+
+    /* btn = $('button');
+
+    function sendForm(data) {
+      console.log('Sending data');
+
+
+    } */
   });
 
 
