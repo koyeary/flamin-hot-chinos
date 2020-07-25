@@ -28,7 +28,7 @@ router.post('/signup', (req, res, next) => {
         if (!user) {
             return res.status(400).json({ errors: 'No user found' });
         }
-        req.logIn(user, function(err) {
+        req.signUp(user, function(err) {
             if (err) {
                 return res.status(400).json({ errors: err });
             }
@@ -46,7 +46,7 @@ router.get('/signup', (req, res, next) => {
         if (!user) {
             return res.status(400).json({ errors: 'No user found' });
         }
-        req.logIn(user, function(err) {
+        req.signup(user, function(err) {
             if (err) {
                 return res.status(400).json({ errors: err });
             }
@@ -64,7 +64,7 @@ router.get('/sign-out', (req, res, next) => {
         if (!user) {
             return res.status(400).json({ errors: 'No user found' });
         }
-        req.logIn(user, function(err) {
+        req.signOut(user, function(err) {
             if (err) {
                 return res.status(400).json({ errors: err });
             }
