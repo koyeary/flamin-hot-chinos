@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <div class="shell">
         <header class="shell-header">
             <div class="row">
@@ -82,6 +83,17 @@
                 </section>
                 <!-- Skills & Resume -->
                 <section>
+                    <div class="container col-md-4 col-md-offset-4">
+                        <form action="/submit" method="post">
+                          <h2>Create A User</h2>
+                          <input type="text" class="form-control" name="username" placeholder="username" autofocus>
+                          <input type="text" class="form-control" name="firstName" placeholder="firstname" autofocus>
+                          <input type="text" class="form-control" name="lastName" placeholder="lastname" autofocus>
+                          <input type="text" class="form-control" name="password" placeholder="password" autofocus>
+                          <input type="text" class="form-control" name="email" placeholder="email" autofocus>
+                          <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">Submit</button>
+                        </form>
+                      </div>
                     <div class="row main-body" id="cv">
                         <div class="col s12 m6">
                             <h4 class="light-blue-text text-darken-2">Experience</h4>
@@ -173,6 +185,7 @@
             <ul>
                 <li>JQuery</li>
                 <li>NodeJS</li>
+                <li>Handlebars</li>
                 <li>React</li>
                 <li>Passport</li>
                 <li>OAuth2 Servers</li>
@@ -226,7 +239,7 @@
     <!-- Compiled and minified JavaScript for Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Local Javascript-->
-    <script src="/index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
