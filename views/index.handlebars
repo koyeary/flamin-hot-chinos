@@ -1,1 +1,196 @@
-//this is the intro page
+
+    <div class="shell">
+        <header class="shell-header">
+            <div class="row">
+                <h1 class="neon flow-text" data-text="U">KA<span class="flicker-slow">T</span> Y<span
+                        class="flicker-fast">E</span>AR<span class="flicker-slow">Y</span></h1><br>
+            </div>
+            <div class="row">
+                <i class="material-icons center-align">expand_more</i>
+            </div>
+        </header>
+        <!-- Main body -->
+        <main class="shell-body">
+               {{> nav }}
+            <div class="custom-container flow-text">
+                <div class="row main-body center hide-on-small-only title">
+                    <!-- Title on Full-Size Browser -->
+                    <h2 class="light-blue-text text-darken-2">Full-Stack Engineer</h2>
+                </div>
+                <!-- Title on Mobile -->
+                <div class="row main-body center hide-on-med-and-up title">
+                    <h3 class="light-blue-text text-darken-2">Full-Stack Engineer</h3>
+                </div>
+                <!--                 <div class="row main-body"> -->
+                <section>
+                    <!-- About Me -->
+
+                    <div class="row main-body" id="aboutme">
+                        <div class="col s12 m12 l5">
+                            <img class="responsive-img circle" src="assets/cropped_ky.jpg" style="padding-bottom:5%;">
+                        </div>
+                        <div class="col s1 hide-on-small-only"></div>
+                        <div class="col s12 m12 l6">
+                            <h4 class="light-blue-text text-darken-2">Nice to meet you.</h4>
+                            <p>I'm a junior software engineer based in Los Angeles, CA. I have more fun with the hard
+                                problems than the easy ones. If I'm not learning something new, I'm bored. And I've always loved learning languages - <a class="tooltipped" data-position="bottom"
+                                    data-html="true"
+                                    data-tooltip='<h6>My favorite phrase is "Tämä takani kaveri maksaa kaikesta" <br> ("The guy behind me will pay for everything")</h6>'>at
+                                    the moment, I'm learning Finnish.</a></p>
+                        </div>
+                </section>
+                <!-- Skills & Resume -->
+                <section>
+                    <div class="container col-md-4 col-md-offset-4">
+                        <form action="/submit" method="post">
+                          <h2>Create A User</h2>
+                          <input type="text" class="form-control" name="username" placeholder="username" autofocus>
+                          <input type="text" class="form-control" name="firstName" placeholder="firstname" autofocus>
+                          <input type="text" class="form-control" name="lastName" placeholder="lastname" autofocus>
+                          <input type="text" class="form-control" name="password" placeholder="password" autofocus>
+                          <input type="text" class="form-control" name="email" placeholder="email" autofocus>
+                          <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">Submit</button>
+                        </form>
+                      </div>
+                    <div class="row main-body" id="cv">
+                        <div class="col s12 m6">
+                            <h4 class="light-blue-text text-darken-2">Experience</h4>
+                            <p>I'm a full-stack Javascript programmer / developer with expertise in numerous
+                                libraries. You can check out my experience below.</p>
+                            <p>
+                                <!-- Modal Trigger -->
+                                <button data-target="resume"
+                                    class="waves-effect waves-light btn-large modal-trigger">CV</button>
+
+                                <!-- Modal Trigger -->
+                                <button data-target="expertise"
+                                    class="waves-effect waves-light btn-large modal-trigger">EXPERTISE</button>
+                            </p>
+                        </div>
+
+                        <div class="col m1 hide-on-small-only"></div>
+                        <div class="col m5 hide-on-small-only">
+                            <a href="https://placeholder.com"><img class="responsive-img circle"
+                                    src="https://via.placeholder.com/500"></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Something Else -->
+                <section>
+                    <div class="row main-body" id="contactme">
+                        <div class="col m5 hide-on-small-only">
+                            <a href="https://placeholder.com"><img class="responsive-img circle"
+                                    src="https://via.placeholder.com/500"></a>
+                        </div>
+                        <div class="col s1 hide-on-small-only"></div>
+                        <div class="col s12 m6">
+                            <h4 class="light-blue-text text-darken-2">Contact me.</h4>
+                            <p>Just use this handy form.</p>
+                            <p></p>
+                            <!-- Modal Trigger -->
+                            <button data-target="contactform"
+                                class="waves-effect waves-light btn-large modal-trigger">HMU</button>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+    </div>
+
+    </main>
+    <div class="shell-footer">
+        <footer class="page-footer teal darken-1 z-depth-3">
+            <div class="container" style="padding:2%;">
+                <div class="row">
+                    <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Credits</a></div>
+                    <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Sitemap</a></div>
+                    <div class="col s3"><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></div>
+                    <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Twitter</a></div>
+
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2020 Kat Yeary
+                    <a class="grey-text text-lighten-4 right" href="#https://www.katyeary.com">(I was looking for
+                        the comedian?)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="resume" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="expertise" class="modal">
+        <div class="modal-content">
+            <h5>Languages</h5>
+            <p>JavaScript, CSS</p>
+            <h5>Libraries & Methodologies</h5>
+            <ul>
+                <li>JQuery</li>
+                <li>NodeJS</li>
+                <li>Handlebars</li>
+                <li>React</li>
+                <li>Passport</li>
+                <li>OAuth2 Servers</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>Sequelize</li>
+                <li>CRUD</li>
+                <li>RESTful APIs</li>
+                <li>Agile Development</li>
+                <li>Object-Oriented Programming</li>
+                <li>Project Management</li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Thanks!</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="contactform" class="modal">
+        <div class="modal-content">
+            <h4>Say hello.</h4>
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row modal-form-row">
+                        <div class="input-field col s12">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Your Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="text" class="validate">
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" type="text" class="materialize-textarea validate"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
