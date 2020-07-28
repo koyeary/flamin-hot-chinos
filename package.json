@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
-  },
+    "start": "node ./bin/www"
+    },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koyeary/flamin-hot-chinos.git"
