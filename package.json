@@ -6,33 +6,42 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www"
-    },
-
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "chai": "^4.0.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3",
+    "sinon": "^2.3.2",
+    "sinon-mongoose": "^2.0.2"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koyeary/flamin-hot-chinos.git"
+    "url": "https://https://github.com/koyeary/flamin-hot-chinos"
   },
-  "author": "Kat Yeary",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/koyeary/flamin-hot-chinos/issues"
-  },
-  "homepage": "https://github.com/koyeary/flamin-hot-chinos#readme",
   "dependencies": {
-    "bcrypt": "^5.0.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "express-session": "^1.17.1",
-    "morgan": "^1.10.0",
-    "mysql2": "^2.1.0",
-    "nodemon": "^2.0.4",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "sequelize": "^6.3.3",
-    "session": "^0.1.0"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.10.0",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   },
-  "devDependencies": {},
-  "keywords": [
-    "portfolio"
-  ]
+  "engines": {
+    "node": "7.8.0"
+  }
 }

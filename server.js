@@ -3,17 +3,18 @@
 const express        = require('express');
 const path           = require('path');
 const logger         = require('morgan');
+const cookieParser   = require('cookie-parser'); // for working with cookies
+const bodyParser     = require('body-parser');
 const session        = require('express-session'); 
-const passport 		 = require("./config/passport");
-const config		 = require("./config/extra-config");
+const passport 			 = require("./config/passport");
+const config				 = require("./config/extra-config");
+const mongoose 			 = require('mongoose');
+
 // Express settings
 // ================
 
 // instantiate our app
 const app            = express();
-
-//allow sessions
-// app.use(session({ secret: 'booty Mctootie', cookie: { maxAge: 60000 }}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,10 +30,11 @@ const isAuth 				 = require("./config/middleware/isAuthenticated");
 const authCheck 		 = require('./config/middleware/attachAuthenticationStatus');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + 'public/favicon.ico'));
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({ secret: config.sessionKey, resave: true, saveUninitialized: true }));
@@ -40,8 +42,21 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(authCheck);
 
-
 require('./routes')(app);
+
+//Set up default mongoose connection
+const configDB = require('./config/database');
+mongoose.connect(configDB.url);
+
+//Get the default connection
+const db = mongoose.connection;
+
+//Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+db.once("open", function() {
+  console.log("Mongoose connection successful.");
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -59,6 +74,7 @@ app.use(function(err, req, res, next) {
     error: (app.get('env') === 'development') ? err : {}
   })
 });
+
 
 // our module get's exported as app.
 module.exports = app;

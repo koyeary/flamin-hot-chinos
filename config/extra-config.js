@@ -1,4 +1,3 @@
-  
 const config = {
 	sessionKey: process.env.sessionKey || "welcomeToThePartyRichter"
 }

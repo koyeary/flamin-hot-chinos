@@ -1,8 +1,9 @@
-var db = require('../models');
+var User = require('../models/User');
+
 
 //this is the users_controller.js file
 exports.registrationPage = function(req,res) {
-  res.render('users/registration', {
+	res.render('users/registration', {
     layout: 'main-registration'
   });
 };
@@ -23,24 +24,32 @@ exports.loginUser = function(req, res) {
 // register a user
 exports.signUpUser = function(req,res) {
 
-  db.User.findAll({
-    where: {username: req.body.username}
-  }).then(function(users) {
-    if (users.length > 0) {
-      res.json({
-        duplicateUser: true
-      });
-    //At some point, make sure that only one user can be associated with an email.
+  User.findOne({ 'username' :  req.body.username }, function(err, user) {
+
+    // check to see if theres already a user with that email
+    if (user) {
+        res.send({
+          duplicateUser: true
+        })
     } else {
-      db.User.create({
-        username: req.body.username,
-        email: req.body.email,
-        password: req.body.password
-      }).then(function() {
-        res.send({redirect: '/'});
-      }).catch(function(err) {
-        res.json(err);
-      });
+
+        // if there is no user with that email
+        // create the user
+        const newUser            = new User();
+
+        // set the user's local credentials
+        newUser.username    = req.body.username;
+        newUser.email       = req.body.email;
+        newUser.password    = newUser.generateHash(req.body.password);
+
+        // save the user
+        newUser.save()
+          .then(function() {
+          res.send({redirect: '/'});
+        }).catch(function(err) {
+          res.json(err);
+        });
     }
-  })
+
+  }); 
 };
