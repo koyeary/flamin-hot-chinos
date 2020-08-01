@@ -1,10 +1,10 @@
 
-var express = require('express');
-var router  = express.Router();
+const express = require('express');
+const router  = express.Router();
 
-var passport = require("../config/passport");
-var users_controller = require('../controllers/users_controller');
-var isAuthenticated = require("../config/middleware/isAuthenticated");
+const passport = require("../config/passport");
+const users_controller = require('../controllers/users_controller');
+const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 router.get('/signup', users_controller.registrationPage);
 

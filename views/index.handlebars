@@ -24,18 +24,17 @@
 
 <div>
     {{> nav }}
-
-    <main class="delay-visibility">
+    {{> login-modal }}
+    <main>
         <section>
             <!-- About Me -->
             <div class="flow-text">
-                <div class="row main-body" id="aboutme">
-                    <div class="col s12 m12 l5">
-                        <img class="responsive-img" src="assets/Kat_Yeary-6.jpg" style="padding-bottom:5%;">
+                <div class="row" id="aboutme">
+                    <div class="col sm-12 md-12 lg-5">
                     </div>
                     <div class="col s1 hide-on-small-only"></div>
                     <div class="col s12 m12 l6 vertical-center">
-                        <h4 class="light-blue-text text-darken-2">Nice to meet you.</h4>
+                        <h4>Nice to meet you.</h4>
                         <p>I'm a junior software engineer based in Los Angeles, CA.</p>
                         <p>I'm more interested in hard problems than easy ones. If I'm not learning something new, I'm
                             bored.</p>
@@ -58,8 +57,7 @@
                             class="waves-effect waves-light btn-large modal-trigger">CV</button>
 
                         <!-- Modal Trigger -->
-                        <button data-target="expertise"
-                            class="waves-effect waves-light btn-large modal-trigger">EXPERTISE</button>
+                        <button data-toggle="modal" data-target="#login-modal">EXPERTISE</button>
                     </p>
                 </div>
 
@@ -117,7 +115,7 @@
 </div>
 </div>
 
-
+{{!-- 
 <!-- Modal Structure -->
 <div id="resume" class="modal">
     <div class="modal-content">
@@ -190,4 +188,4 @@
         <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
     </div>
 </div>
-</div>
+</div> --}}
