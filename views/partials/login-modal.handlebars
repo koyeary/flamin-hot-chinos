@@ -1,38 +1,33 @@
-{{!-- 
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="login">		
-	  <div class="loginmodal-container">
-			<h1 class="">Log In to Your Account</h1><br>
-		  <form class="login">
-				<input id="username-input" type="text" name="user" placeholder="Username">
-				<input id="password-input" type="password" name="pass" placeholder="Password">
-				<input type="submit" name="login" class="login loginmodal-submit" value="Login">
-		  </form>
-		  <div class="login-help">
-				<a href="/users/signup">Register</a> - <a href="#">Forgot Password</a>
-		  </div>
-		</div>
-	</div>
-</div>
- --}}
-
-<!-- Modal -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+<form>
+  <div class="sign-in-form">
+    <h4 class="text-center">Sign In</h4>
+    <label for="sign-in-form-username">Username</label>
+    <input type="text" class="sign-in-form-username" id="sign-in-form-username">
+    <label for="sign-in-form-password">Password</label>
+    <input type="text" class="sign-in-form-password" id="sign-in-form-password">
+    <button type="submit" class="sign-in-form-button">Sign In</button>
+	<button type="button" class="sign-in-form-button" style="margin-top:10px;" data-open="register">Sign Up</button>
   </div>
-</div>
+</form>
+
+{{> register}}
+
+
+{{!-- <div class="translucent-form-overlay">
+	<form>
+		<h3>Log In</h3>
+		<div class="row columns">
+			<label>
+				<input type="text" name="keyword" placeholder="username">
+			</label>
+		</div>
+		<div class="row columns">
+			<label>
+				<input type="text" name="keyword" placeholder="password">
+			</label>
+		</div>
+		<button type="button" class="primary button expanded search-button">
+			Go
+		</button>
+	</form>
+</div> --}}

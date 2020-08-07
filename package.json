@@ -37,6 +37,7 @@
     "method-override": "^2.3.8",
     "mongoose": "^4.10.0",
     "morgan": "^1.8.1",
+    "motion-ui": "^2.0.3",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0"

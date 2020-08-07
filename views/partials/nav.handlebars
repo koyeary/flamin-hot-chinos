@@ -1,24 +1,24 @@
-
-    <!--Collapsable sticky navigation bar with links to About Me, Portfolio, and Contact information-->
-
-    <div class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark"
-        style="font-family: Lato, sans-serif; font-weight:700;" id="navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1.25rem; margin-left:60%">
-            <ul class="navbar-nav mr-auto">  
-    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login-modal">Login</a></li>
-    <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
-    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
-    <li class="nav-item"><a class="nav-link" href="#contactme">Contact Me</a></li>
-    <li class="nav-item"><a class="nav-link" href="https://github.com/koyeary">GitHub</a></li>
-                </ul>
-        </div>
+<nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="#"><strong>something</strong></a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+        <li><a href="https://github.com/koyeary">GitHub</a></li>
+        <li>
+          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+        </li>
+      </ul>
     </div>
-
+  </div>
+</nav>
 
 {{!-- <ul class="sidenav" id="mobile-demo">
     <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>

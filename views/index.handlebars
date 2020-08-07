@@ -1,191 +1,23 @@
-<!--Full-Screen welcome page with link to contents-->
-<div class="jumbotron-item min-vh-50 mb-0" id="top">
-    <div class="row">
-        <div class="col sm-6">
-            <picture class="fade-in">
-                <img class="img-fluid" style="max-height: 100vh;" src="assets/resp-portrait.jpg">
-            </picture>
-        </div>
-        <div class="col vertical-center">
-            <div>
-
-                <h1 class="display-4 typewriter">Hi, I'm Kat Yeary.</h1>
-                <div class="fade-in-btn">
-                    <!--Button with link to "About Me" section-->
-                    <a class="btn btn-lg btn-dark" style="margin-top:5%;" href="#aboutme" role="button">About Me
-                        <i class="fas fa-angle-double-down"></i></a>
-
-                </div>
-
-            </div>
+<div class="hero-section">
+    <div class="slide-in-left"><img src="assets/resp-portrait.jpg"></div>
+    <div class="grid-container grid-x align-middle align-left">
+        <div class="cell">
+           <div class="typewriter">Hi, I'm Kat Yeary.<span><a href="#aboutme"> X</a></span></div><br>
         </div>
     </div>
 </div>
+{{> nav}}
 
-<div>
-    {{> nav }}
-    {{> login-modal }}
-    <main>
-        <section>
-            <!-- About Me -->
-            <div class="flow-text">
-                <div class="row" id="aboutme">
-                    <div class="col sm-12 md-12 lg-5">
-                    </div>
-                    <div class="col s1 hide-on-small-only"></div>
-                    <div class="col s12 m12 l6 vertical-center">
-                        <h4>Nice to meet you.</h4>
-                        <p>I'm a junior software engineer based in Los Angeles, CA.</p>
-                        <p>I'm more interested in hard problems than easy ones. If I'm not learning something new, I'm
-                            bored.</p>
-                        I've always loved learning languages - <a class="tooltipped" data-position="bottom"
-                            data-html="true"
-                            data-tooltip='<h6>Favorite phrase: "Tämä takani kaveri maksaa kaikesta" <br> ("The guy behind me will pay for everything")</h6>'>(at
-                            the moment, I'm learning Finnish).</a></p>
-                    </div>
-        </section>
-        <!-- Skills & Resume -->
-        <section>
-            <div class="row main-body" id="cv">
-                <div class="col s12 m6">
-                    <h4 class="light-blue-text text-darken-2">Experience</h4>
-                    <p>I'm a full-stack Javascript programmer / developer with expertise in numerous
-                        libraries. You can check out my experience below.</p>
-                    <p>
-                        <!-- Modal Trigger -->
-                        <button data-target="resume"
-                            class="waves-effect waves-light btn-large modal-trigger">CV</button>
+<main>
 
-                        <!-- Modal Trigger -->
-                        <button data-toggle="modal" data-target="#login-modal">EXPERTISE</button>
-                    </p>
-                </div>
-
-                <div class="col m1 hide-on-small-only"></div>
-                <div class="col m5 hide-on-small-only">
-                    <a href="https://placeholder.com"><img class="responsive-img circle"
-                            src="https://via.placeholder.com/500"></a>
-                </div>
-            </div>
-        </section>
-        <!-- Something Else -->
-        <section>
-            <div class="row main-body" id="contactme">
-                <div class="col m5 hide-on-small-only">
-                    <a href="https://placeholder.com"><img class="responsive-img circle"
-                            src="https://via.placeholder.com/500"></a>
-                </div>
-                <div class="col s1 hide-on-small-only"></div>
-                <div class="col s12 m6">
-                    <h4 class="light-blue-text text-darken-2">Contact me.</h4>
-                    <p>Just use this handy form.</p>
-                    <p></p>
-                    <!-- Modal Trigger -->
-                    <button data-target="contactform"
-                        class="waves-effect waves-light btn-large modal-trigger">HMU</button>
-                    </p>
-                </div>
-            </div>
-        </section>
 </div>
-
+<div class="fade-in"><button class="button" data-toggle="loginModal">Log In</button></div>
+<div class="tiny reveal" id="loginModal" style="background-color:rgba(54, 54, 54, 0); border-color: rgba(54, 54, 54, 0); outline:none;" data-toggler data-animate:"fade-in"
+ data-reveal>
+  {{> login-modal }}
 </div>
 
 </main>
-<div class="shell-footer">
-    <footer class="page-footer teal darken-1 z-depth-3">
-        <div class="container" style="padding:2%;">
-            <div class="row">
-                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Credits</a></div>
-                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Sitemap</a></div>
-                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></div>
-                <div class="col s3"><a class="grey-text text-lighten-3" href="#!">Twitter</a></div>
-
-            </div>
-        </div>
-
-        <div class="footer-copyright">
-            <div class="container">
-                © 2020 Kat Yeary
-                <a class="grey-text text-lighten-4 right" href="#https://www.katyeary.com">(I was looking for
-                    the comedian?)</a>
-            </div>
-        </div>
-    </footer>
-</div>
-</div>
-
-{{!-- 
-<!-- Modal Structure -->
-<div id="resume" class="modal">
-    <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-</div>
-
-<!-- Modal Structure -->
-<div id="expertise" class="modal">
-    <div class="modal-content">
-        <h5>Languages</h5>
-        <p>JavaScript, CSS</p>
-        <h5>Libraries & Methodologies</h5>
-        <ul>
-            <li>JQuery</li>
-            <li>NodeJS</li>
-            <li>Handlebars</li>
-            <li>React</li>
-            <li>Passport</li>
-            <li>OAuth2</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-            <li>MySQL</li>
-            <li>Sequelize</li>
-            <li>CRUD</li>
-            <li>RESTful APIs</li>
-            <li>Agile Development</li>
-            <li>Object-Oriented Programming</li>
-            <li>Project Management</li>
-        </ul>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Thanks!</a>
-    </div>
-</div>
-
-<!-- Modal Structure -->
-<div id="contactform" class="modal">
-    <div class="modal-content">
-        <h4>Say hello.</h4>
-
-        <div class="row">
-            <form class="col s12">
-                <div class="row modal-form-row">
-                    <div class="input-field col s12">
-                        <input id="name" type="text" class="validate">
-                        <label for="name">Your Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Your Email</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="message" type="text" class="materialize-textarea validate"></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-    </div>
-</div>
-</div> --}}
+<script>
+    $(document).foundation();
+</script>
