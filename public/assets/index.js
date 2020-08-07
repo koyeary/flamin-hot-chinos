@@ -1,10 +1,3 @@
-
-$("#Trigger").click(function () {
-    $("#Slider").toggleClass("slidedown slideup");
-      if ($("#Slider").hasClass("slideup"))
-        $("#Slider").removeClass("slideup").addClass("slidedown");
-      else
-          $("#Slider").removeClass("slidedown").addClass("slideup");
-  });
-
+$('#loginModal').onClick(function () { MotionUI.animateIn(this, 'fade-in');});
+$('#loginModal').onClick(function () { MotionUI.animateIn(this, 'ease-in-slow');});
 
