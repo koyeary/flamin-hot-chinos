@@ -1,4 +1,4 @@
-/* var gulp = require('gulp');
+var gulp = require('gulp');
 var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
@@ -49,5 +49,10 @@ gulp.task('dev', ['browserSync', 'minify-css', 'minify-js'], function() {
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/ //*.js', browserSync.reload);
-//});
+});
+
+gulp.src('./src/scss/app.scss')
+   .pipe(sass( {
+      includePaths: ['node_modules/motion-ui/src']
+   }));
  

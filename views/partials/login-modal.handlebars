@@ -1,35 +1,19 @@
-<div class="tiny reveal" id="loginModal" style="background-color:rgba(54, 54, 54, 0); border-color: rgba(54, 54, 54, 0); outline:none;"
- data-reveal>
- <form>
-  <div class="sign-in-form">
-    <h4 class="text-center">Sign In</h4>
-    <label for="sign-in-form-username">Username</label>
-    <input type="text" class="sign-in-form-username" id="sign-in-form-username">
-    <label for="sign-in-form-password">Password</label>
-    <input type="text" class="sign-in-form-password" id="sign-in-form-password">
-    <button type="submit" class="sign-in-form-button">Sign In</button>
-	<button type="button" class="sign-in-form-button" style="margin-top:10px;" data-open="register">Sign Up</button>
-  </div>
-</form>
-</div>
+
+	<div class="tiny reveal" id="loginModal"
+		style="background-color:rgba(54, 54, 54, 0); border-color: rgba(54, 54, 54, 0); outline:none;" data-reveal data-animation-in="slide-in-down fast" data-animation-out="slide-out-up">
+		<form>
+			<div class="sign-in-form">
+				<h4 class="text-center">Sign In</h4>
+				<label for="sign-in-form-username">Username</label>
+				<input type="text" class="sign-in-form-username" id="sign-in-form-username">
+				<label for="sign-in-form-password">Password</label>
+				<input type="text" class="sign-in-form-password" id="sign-in-form-password">
+				<button type="submit" class="sign-in-form-button">Sign In</button>
+				<button type="button" class="sign-in-form-button" style="margin-top:10px;" data-open="register">Sign
+					Up</button>
+			</div>
+		</form>
+	</div>
+
+
 {{> register}}
-
-
-{{!-- <div class="translucent-form-overlay">
-	<form>
-		<h3>Log In</h3>
-		<div class="row columns">
-			<label>
-				<input type="text" name="keyword" placeholder="username">
-			</label>
-		</div>
-		<div class="row columns">
-			<label>
-				<input type="text" name="keyword" placeholder="password">
-			</label>
-		</div>
-		<button type="button" class="primary button expanded search-button">
-			Go
-		</button>
-	</form>
-</div> --}}

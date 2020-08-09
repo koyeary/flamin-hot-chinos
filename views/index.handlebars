@@ -1,23 +1,70 @@
 <div class="hero-section">
-    <div class="slide-in-left"><img src="assets/resp-portrait.jpg"></div>
+    <img src="assets/resp-portrait.jpg">
     <div class="grid-container grid-x align-middle align-left">
         <div class="cell">
-           <div class="typewriter">Hi, I'm Kat Yeary.<span><a href="#aboutme"> X</a></span></div><br>
+            <div class="typewriter">Hi, I'm Kat Yeary.</div>
+            <p>I'm a software engineer in Los Angeles, CA.</p>
+            <div class="delay-visibility"><a class="button" href="#aboutme">About Me</a></div>
         </div>
     </div>
 </div>
-{{> nav}}
+<div data-sticky-container>
+    {{> nav}}
+</div>
+
 
 <main>
+    <div class="grid-y" style="height: 250px;">
+        <div class="cell small-6 medium-8 large-2">
+        </div>
+        <div class="cell small-6 medium-4 large-10">
+        </div>
+    </div>
+    <div class="grid-x grid-margin-x">
 
-</div>
-<button class="button" data-toggle="loginModal">Log In</button>
-{{!-- <div class="tiny reveal" id="loginModal" style="background-color:rgba(54, 54, 54, 0); border-color: rgba(54, 54, 54, 0); outline:none;"
- data-reveal> --}}
-  {{> login-modal }}
-</div>
+        <div class="cell small-2"></div>
+        <div class="cell small-4">
+            <p>
+            <h1 style="margin-bottom:10%;">About Me</h1>    
+            <h2 class="subheader">I love problems.</h2>
+            </p>
+            <p>Which is why I love programming. I want to be challenged, to be malleable, to find new solutions, and to always be learning. </p>
+            <p>I've also been a working stand-up comic for seven years. I live with my wife who <a href="https://www.laurenrantala.com">makes cartoons,</a> and her cat, Dr. Katz.</p>
+        </div>
+        <div class="cell small-4" id="aboutme">
+            <div class="cell" style="padding:15%;">
+            <div class="stacked button-group" style="margin-top:40%;">
+                <button class="button cv-modal" style="margin-bottom:10%" data-toggle="cv-modal">Check out my resume.</button>
+                {{> cv }}
+                <button class="button" data-toggle="loginModal">Log In</button>
+                {{> login-modal }}
+            </div>
+            </div>
+        </div>
+        <div class="cell small-2"></div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-4">Cell 1</div>
+        <div class="cell small-4">Cell 2</div>
+        <div class="cell small-4">Cell 3</div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-4 flex-container flex-dir-column">
+            <div class="callout primary flex-child-auto">Auto</div>
+            <div class="callout primary flex-child-auto">Auto</div>
+            <div class="callout primary flex-child-shrink">Shrink</div>
+        </div>
+        <div class="cell small-4">
+        </div>
+        <div class="cell small-4 align-self-top">Align top. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Non harum laborum cum voluptate vel, eius adipisci similique dignissimos nobis at excepturi incidunt fugit
+            molestiae quaerat, consequuntur porro temporibus. Nisi, ex?Align top. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Non harum laborum cum voluptate vel, eius adipisci similique dignissimos nobis
+            at excepturi incidunt fugit molestiae quaerat, consequuntur porro temporibus. Nisi, ex?Align top. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Non harum laborum cum voluptate vel, eius adipisci
+            similique dignissimos nobis at excepturi incidunt fugit molestiae quaerat, consequuntur porro temporibus.
+            Nisi, ex?</div>
+    </div>
+
 
 </main>
-<script>
-    $(document).foundation();
-</script>
