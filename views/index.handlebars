@@ -1,26 +1,63 @@
-{{> nav }} 
+{{> nav }}
 
-      <div class="grid-container"> 
-         <div class="grid-y" style="height: 100px;"></div> 
-         <div class="grid-x grid-margin-x"> 
 
-             <div class="cell" id="aboutme" style="">
-                <h2 class="subheader">I love problems.</h2>
-                <p>That's probably why I love programming. I want to be challenged, to be malleable, to find new solutions, and to always be learning something new. </p>
-                <p>I've also been a working stand-up comic for seven years. I live with my fiancee Lauren, who <a href="https://www.laurenrantala.com">makes cartoons,</a> and our cat, Dr. Katz.</p>
+<div class="grid-container" id="aboutme" style="margin:15%; margin-bottom:10%;">
+    <div class="grid-y" style="height: 300px;"></div>
+    <div class="divider row"></div>
+    <div class="grid-x grid-margin-x" style="margin-top:7rem;margin-left:1rem;">
+        <div class="cell large-6 align-middle padding-top:5rem;">
+            <h1 class="subheader">I love problems.</h1>
+            <p>That's why I like programming. I like being challenged, and I'm more interested in having a hard time learning the best way to do something, than an easy time doing the same thing I did yesterday. I've always had a thing for languages too, and my background was
+                originally in translation. That's a big part of why it felt so natural to become a developer.</p>
+            <p>I've also been a working stand-up comic for seven years. I live with my fiancee Lauren, who <a href="https://www.laurenrantala.com">makes
+                    cartoons,</a> and our cat, Dr. Katz. </p>
+        </div>
+        <div class="cell large-6" style="padding:5rem;">
+            <div class="button-group stacked">
+                <a class="button log-in" href="#cv">Check out my resume.</a>
+                <a class="button" href="https://github.com/koyeary">My Github</a>
+                <a class="button" href="#socialmedia">Social media</a>
+                <a class="button" href="#contact">Contact me</a>
+        </div>
+    </div>
 
-                <button class="button cv-modal" data-toggle="cv-modal">Check
-                    out my resume.</button>
-                {{> cv }}
+    <div class="divider row" id="cv" style="margin-top:7rem;"></div>
+</div>
+<div class="grid-container align-center" style="margin-left:2%;margin-right:2%;">
+    <div class="row"><h1 class="subheader text-center">CV</h1></div>
+    {{> cv }}
+    <div class="divider row" style="margin-top:10rem;"></div>
+</div>
+
+</div>
+
+
+    <div class="grid-container">
+    <div class="grid-x grid-padding-x" id="contact">
+        <div class="cell" style="margin-top:5rem; margin-bottom:2rem; margin-left:10rem;">
+            <h1 class="subheader">Say hello.</h1>
+        </div>
+    </div>
+    <div class="grid-x grid-margin-x" style="margin-left:9rem;margin-right:10rem;">
+        <div class="cell medium-6 large-8" style="padding-right:3rem;">
+                  <label>
+                <input type="text" placeholder="Name">
+            </label>
+            <label>
+                <input type="text" placeholder="Email">
+            </label>
+                <label>
+                <textarea placeholder="Your message" rows="5"></textarea>
+                </label>
+            <div class="text-right">
+            <input type="submit" class="button expanded" value="Submit">
             </div>
-            </div> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam vero quidem perferendis totam obcaecati labore voluptates quasi odit tempora, ab dicta repellendus nobis rerum. Voluptatem et possimus reiciendis ullam?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sed exercitationem necessitatibus sunt, quis quasi eligendi cupiditate doloremque ratione. Repudiandae aut atque tempora sapiente, ratione numquam dolorem iure nesciunt illo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam vero quidem perferendis totam obcaecati labore voluptates quasi odit tempora, ab dicta repellendus nobis rerum. Voluptatem et possimus reiciendis ullam?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sed exercitationem necessitatibus sunt, quis quasi eligendi cupiditate doloremque ratione. Repudiandae aut atque tempora sapiente, ratione numquam dolorem iure nesciunt illo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam vero quidem perferendis totam obcaecati labore voluptates quasi odit tempora, ab dicta repellendus nobis rerum. Voluptatem et possimus reiciendis ullam?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sed exercitationem necessitatibus sunt, quis quasi eligendi cupiditate doloremque ratione. Repudiandae aut atque tempora sapiente, ratione numquam dolorem iure nesciunt illo!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ullam vero quidem perferendis totam obcaecati labore voluptates quasi odit tempora, ab dicta repellendus nobis rerum. Voluptatem et possimus reiciendis ullam?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sed exercitationem necessitatibus sunt, quis quasi eligendi cupiditate doloremque ratione. Repudiandae aut atque tempora sapiente, ratione numquam dolorem iure nesciunt illo!</p>
-    </div>  
+        </div>
+        <div class="cell medium-6 large-4">         
+            <img src="assets/portfoliouse.jpg" style="border-radius:50%;padding:1rem;">
+             <label class="text-center subheader">Also me.</label>
+        </div>
+    </div>
+    <div class="divider row" style="margin:5rem;"></div>
 
+{{!-- {{> footer}} --}}
