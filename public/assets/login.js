@@ -13,7 +13,7 @@ $(document).ready(function () {
     };
 
     if (!userData.username || !userData.password) {
-      return;
+      return alert("Hmmmm.... nope, not you.");
     }
 
     // If we have an email and password we run the loginUser function and clear the form
@@ -35,13 +35,6 @@ $(document).ready(function () {
     });
   }
 
-  $(function () {
-    $(".log-in").click(function () {
-      const $animation = $("#loginModal").data("animation");
-      MotionUI.animateIn($("#loginModal"), $animation);
 
-    });
-
-  });
 
 });
