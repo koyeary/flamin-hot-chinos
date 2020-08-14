@@ -12,9 +12,9 @@ $(document).ready(function () {
       password: passwordInput.val().trim()
     };
 
-    if (!userData.username || !userData.password) {
-      return alert("Hmmmm.... nope, not you.");
-    }
+   /*  if (!userData.username || !userData.password) {
+      return;
+    } */
 
     // If we have an email and password we run the loginUser function and clear the form
     loginUser(userData.username, userData.password);
