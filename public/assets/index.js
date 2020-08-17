@@ -27,5 +27,8 @@ $(document).ready(function () {
     }
   };
 
+  function contactMe(form){
+    form.submit();
+}
 
 }); 
