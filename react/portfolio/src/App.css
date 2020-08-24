@@ -1,0 +1,136 @@
+
+
+/* General */
+
+.button {
+  border-radius: 18px;
+  
+}
+
+.button :hover {
+  background-color: #160947;
+}
+
+.divider {
+  padding: 10px 0;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 10px 13px -7px #2c3840, 5px 5px 15px 5px rgba(44,56,64,0); 
+box-shadow: 0px 10px 13px -7px #2c3840, 5px 5px 15px 5px rgba(44,56,64,0);
+}
+
+
+/* Hero */
+
+.hero-section {
+  background-color: #ffffff; 
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: visible; 
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+          	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;       
+}
+
+
+.hero-section img {
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+/* Title Animation */
+
+.typewriter {
+  font-weight:600; 
+  font-size: 4.5vw;
+  color:#160947;
+  border-right: solid 3px transparent;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.typewriter {
+ animation: animated-text 2s steps(25,end) 1s 1 normal both,
+ animated-cursor 700ms steps(25,end) 6;
+}
+
+
+ @keyframes animated-text{
+  from{width: 1%;}
+  to{width: 100%;}
+} 
+
+@keyframes animated-cursor{
+  from{border-right-color: #160947;}
+  to{border-right-color: transparent;}
+} 
+
+/*by-line*/
+.hero-section p {
+  font-weight: 400; 
+  font-size: 2vw;
+  color:#160947;
+  border-right: solid 3px transparent;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.hero-section p {
+ animation: animated-p 2s steps(27,end) 4.5s 1 normal both,
+ animated-cursor-p 700ms steps(27,end) 4s 5;
+}
+
+ @keyframes animated-p {
+  from{width: 0.1%;}
+  to{width: 101%;}
+} 
+
+@keyframes animated-cursor-p {
+  from{border-right-color: #160947;}
+  to{border-right-color: transparent;}
+} 
+
+/* About Me Button */
+
+ .hero-buttons {
+   background-color: #160947;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 18px;
+  border-width: 5px;
+}
+
+.delay-visibility {
+  animation: delayVisibility ease 8s;
+}
+
+@keyframes delayVisibility {
+  0% {
+    opacity:0;
+    visibility: hidden;
+    }
+    90% {
+      opacity:0.5;
+      visibility: hidden;
+    }
+  100% {
+    opacity:1;
+    visibility: visible;
+  }
+  }
