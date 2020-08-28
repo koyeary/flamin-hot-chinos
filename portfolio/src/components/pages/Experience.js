@@ -21,14 +21,6 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Label,
-  FormGroup,
-  Input,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Container,
   Row,
   Col,
@@ -37,7 +29,7 @@ import {
 // core components
 import Navbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Footer from "components/Footers/Footer.js";
 /* import SectionCarousel from "components/Index.js"; */
 /* import SectionCarousel from "views/index-sections/SectionCarousel"; */
 
@@ -101,7 +93,7 @@ function Experience() {
   
           </Container>
         </div>
-        <DemoFooter />
+        <Footer />
       </>
     );
   }
