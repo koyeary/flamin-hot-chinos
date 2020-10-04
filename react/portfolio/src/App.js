@@ -1,10 +1,19 @@
 import React from 'react';
 import './App.css';
-import Hero from './components/Hero.js'
+import Navbar from './components/Navbar'
+import AboutMe from './components/AboutMe';
 
 function App() {
+
   return (
-<Hero/>)
+<div>
+<div>
+<Navbar/>
+  </div>
+  <div>
+    <AboutMe/>
+  </div>
+  </div>)
 }
 
 export default App;

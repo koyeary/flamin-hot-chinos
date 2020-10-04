@@ -17,6 +17,11 @@
 box-shadow: 0px 10px 13px -7px #2c3840, 5px 5px 15px 5px rgba(44,56,64,0);
 }
 
+.profile-img {
+    padding: 100px;
+  }
+
+
 
 /* Hero */
 
@@ -225,13 +230,40 @@ box-shadow: 0px 10px 13px -7px #2c3840, 5px 5px 15px 5px rgba(44,56,64,0);
   margin-bottom: 1rem;
 }
 
- 
-/* Navbar */
- 
- body {
-  padding-top: 330px;
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
 }
 
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+} 
+/* Navbar */
+/* 
 .sticky-shrinknav-menu {
   position: absolute;
   left: 50%;
@@ -281,9 +313,9 @@ box-shadow: 0px 10px 13px -7px #2c3840, 5px 5px 15px 5px rgba(44,56,64,0);
   transition: all 0.5s ease;
 }
 
-body.sticky-shrinknav-wrapper {
+/* body.sticky-shrinknav-wrapper {
   padding-top: 130px;
-}
+} 
 
 body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
   height: 3.75rem;
@@ -358,7 +390,7 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
+} */
 
 /* Different social footer 
 .social-footer .social-footer-icons li:last-of-type {
